@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffe3fa;
+}
+
+.calculator {
+    background: #ea84c9;
+    box-shadow: 0 2px 12px #b15599;
+    border: 2px solid #b65ea1;
+    border-radius: 18px;
+    width: 270px;
+    margin: 60px auto;
+    padding: 28px 18px 28px 18px;
+}
+
+#display {
+    width: 90%;
+    height: 38px;
+    font-size: 20px;
+    margin-bottom: 17px;
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    padding-right: 10px;
+    text-align: right;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+button {
+    width: 56px;
+    height: 45px;
+    margin: 3px;
+    font-size: 20px;
+    border-radius: 9px;
+    border: 1.5px solid #aa3090;
+    background: #fff;
+    color: #231f20;
+    cursor: pointer;
+    box-shadow: 0 1px 4px #b1559992;
+    transition: background 0.13s, color 0.13s;
+}
+
+button:active {
+    background: #ffc1ef;
+}
+
+button[onclick*="append('+')"], button[onclick*="append('-')"],
+button[onclick*="append('*')"], button[onclick*="append('/')"] {
+    background: #ffd3f2;
+    color: #810056;
+}
+
+button[onclick*="clearDisplay"] {
+    background: #ffb6c1;
+    color: #a80021;
+}
+
+button[onclick*="delChar"] {
+    background: #ffe98a;
+    color: #bd7a00;
+}
+
+button[onclick*="calculate"] {
+    background: #e6ffed;
+    color: #00690a;
+    width: 230px;
+    margin-top: 5px;
+    margin-left: 3px;
+    font-weight: bold;
+}
